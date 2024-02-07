@@ -3,6 +3,24 @@
 //     $('[type="password"]').val('nir12345');
 // });
 
+let btnSubmit = document.querySelector('input[type="submit"]');
+let userName = document.querySelector('input[type="text"]');
+let userPass = document.querySelector('input[type="password"]');
+
+btnSubmit.addEventListener('mouseover', function(){
+    userName.value = "nir@hagever.com";
+    userPass.value = "nir12345";
+});
+
+
+
+
+
+
+
+
+
+
 // const array = [1, 2, 3, 4, 5];
 
 // let searchMissingNumber = function(array) {
@@ -19,23 +37,23 @@
 
 // console.log(searchMissingNumber(array));
 
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-let binarySearch = function(array, number, start = 0, end = array.length - 1) {
-    if(start > end) {
-        return false;
-    }
+// let binarySearch = function(array, number, start = 0, end = array.length) {
+//     if(start > end) {
+//         return false;
+//     }
     
-    const middle = Math.floor((start + end) / 2);
+//     const middle = Math.floor((start + end) / 2);
 
-    if(array[middle] === number) {
-        return middle;
-    } else if(array[middle] > number) {
-        return binarySearch(array, number, start, middle - 1);
-    } else {
-        return binarySearch(array, number, middle + 1, end);
-    }
+//     if(array[middle] === number) {
+//         return middle;
+//     } else if(array[middle] > number) {
+//         return binarySearch(array, number, start, middle - 1);
+//     } else {
+//         return binarySearch(array, number, middle + 1, end);
+//     }
 
-}
+// }
 
-console.log(binarySearch(array, 6))
+// console.log(binarySearch(array, 6))
